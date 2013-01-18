@@ -25,13 +25,14 @@
         android:layout_above="@+id/img"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="66dp"
-        android:layout_marginLeft="18dp"
+        android:layout_marginLeft="80dp"
         android:onClick="selfDestruct"
         android:text="@string/button_text" />
 	<Button
 		android:id="@+id/button2"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="@string/list_text" />
+		android:text="@string/list_text" 
+		android:onClick="openList" />
 
 </RelativeLayout>

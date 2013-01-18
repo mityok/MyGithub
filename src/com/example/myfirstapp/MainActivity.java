@@ -6,10 +6,13 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.content.*;
 
 public class MainActivity extends Activity {
 
     private DownloadImageTask downloadImageTask;
+
+	public String EXTRA_MESSAGE="message";
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -31,4 +34,9 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
     }
+	public void openList(View view){
+		Intent intent = new Intent(this, ListViewActivity.class);  
+		intent.putExtra(EXTRA_MESSAGE, "message"); 
+		startActivity(intent);
+	}
 }
