@@ -4,6 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="button_text">Stop right now!</string>
+	<string name="list_text">Open List</string>
     <string name="title_activity_main">MainActivity</string>
 
 </resources>
